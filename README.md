@@ -2,8 +2,7 @@ About
 =====
 This is LinkedIn plugin for LockInfo. To know what is LockInfo visit http://www.lockinfo.net/.
 
-This plugin shows updates from your LinkedIn network on your lockscreen. 
-Preview here: http://dl.dropbox.com/u/8498648/LockInfoLinkedIn/lockinfolinkedin.html
+This plugin shows updates from your LinkedIn network on your lockscreen. Preview http://dl.dropbox.com/u/8498648/LockInfoLinkedIn/lockinfolinkedin.html
 
 Getting started
 ---------------
@@ -16,7 +15,7 @@ To start with jailbroken apps development and getting required tools, visit http
 Build it
 --------
 
-If you want to build this, you will have to add one file locally, LinkedInAuthSecrets.h and add your LinkedIn dev api key and secret there.
+If you want to build this, you will have to add one file locally, `LinkedInAuthSecrets.h` and add your LinkedIn dev api key and secret there.
 
 	static NSString* CONSUMER_KEY = @"yourKey";
 	static NSString* CONSUMER_SECRET  = @"andSecret";
