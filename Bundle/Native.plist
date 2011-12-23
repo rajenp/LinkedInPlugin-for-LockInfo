@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.rpatil.lockinfo.LinkedInPlugin</string>
+			<key>key</key>
+			<string>ShowPreview</string>
+			<key>label</key>
+			<string>Enable Preview</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.rpatil.lockinfo.LinkedInPlugin</string>
+			<key>key</key>
+			<string>UseDoubleTap</string>
+			<key>label</key>
+			<string>Double-Tap for Preview</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.rpatil.lockinfo.LinkedInPlugin</string>
+			<key>key</key>
+			<string>Collapsed</string>
+			<key>label</key>
+			<string>Collapsed on Respring</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.rpatil.lockinfo.LinkedInPlugin</string>
+			<key>key</key>
+			<string>ShowCount</string>
+			<key>label</key>
+			<string>Show Count</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>LinkedIn</string>
+</dict>
+</plist>

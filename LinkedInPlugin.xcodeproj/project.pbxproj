@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF13968A14A33D83005BBB7C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF13968914A33D83005BBB7C /* QuartzCore.framework */; };
+		EF5927B51440BE18008C056C /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5927B01440BE01008C056C /* Preferences.framework */; };
+		EF67192B143EBE2300DC9721 /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1545143C720700B4AE80 /* Base64Transcoder.c */; };
+		EF67192E143EBEF700DC9721 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1547143C720700B4AE80 /* hmac.c */; };
+		EF67192F143EBEF700DC9721 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1549143C720700B4AE80 /* sha1.c */; };
+		EF93E74B143ECC8E004EFAAB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFAC1539143C720700B4AE80 /* Info.plist */; };
+		EFF7D948143EB8BE0096AD5C /* LinkedInPlugin.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1579143C720700B4AE81 /* LinkedInPlugin.mm */; };
+		EFF7D949143EB8BE0096AD5C /* KeychainUtils.mm in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1552143C720700B4AE80 /* KeychainUtils.mm */; };
+		EFF7D94A143EB8CE0096AD5C /* OAAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1511143C720700B4AE80 /* OAAttachment.m */; };
+		EFF7D94B143EB8CE0096AD5C /* OACall.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1513143C720700B4AE80 /* OACall.m */; };
+		EFF7D94C143EB8CE0096AD5C /* OAConsumer.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1515143C720700B4AE80 /* OAConsumer.m */; };
+		EFF7D94D143EB8CE0096AD5C /* OADataFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1517143C720700B4AE80 /* OADataFetcher.m */; };
+		EFF7D94E143EB8CE0096AD5C /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1519143C720700B4AE80 /* OAHMAC_SHA1SignatureProvider.m */; };
+		EFF7D94F143EB8CE0096AD5C /* OAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC151B143C720700B4AE80 /* OAMutableURLRequest.m */; };
+		EFF7D950143EB8CE0096AD5C /* OAPlaintextSignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC151D143C720700B4AE80 /* OAPlaintextSignatureProvider.m */; };
+		EFF7D951143EB8CE0096AD5C /* OAProblem.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC151F143C720700B4AE80 /* OAProblem.m */; };
+		EFF7D952143EB8CE0096AD5C /* OARequestParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1521143C720700B4AE80 /* OARequestParameter.m */; };
+		EFF7D953143EB8CE0096AD5C /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1523143C720700B4AE80 /* OAServiceTicket.m */; };
+		EFF7D954143EB8CE0096AD5C /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1526143C720700B4AE80 /* OAToken.m */; };
+		EFF7D955143EB8CE0096AD5C /* OATokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1528143C720700B4AE80 /* OATokenManager.m */; };
+		EFF7D956143EB8CE0096AD5C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC152D143C720700B4AE80 /* JSONKit.m */; };
+		EFF7D957143EB8CE0096AD5C /* NSMutableURLRequest+Parameters.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1530143C720700B4AE80 /* NSMutableURLRequest+Parameters.m */; };
+		EFF7D958143EB8CE0096AD5C /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1532143C720700B4AE80 /* NSString+URLEncoding.m */; };
+		EFF7D959143EB8CE0096AD5C /* NSURL+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = EFAC1534143C720700B4AE80 /* NSURL+Base.m */; };
+		EFF7D961143EB95D0096AD5C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3EB93D143EB429008241E5 /* Security.framework */; };
+		EFF7D962143EB95F0096AD5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAC14E8143C717F00B4AE80 /* UIKit.framework */; };
+		EFF7D963143EB9600096AD5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAC14EA143C717F00B4AE80 /* Foundation.framework */; };
+		EFF7D964143EB9620096AD5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAC14EC143C717F00B4AE80 /* CoreGraphics.framework */; };
+		EFF7D965143EB9890096AD5C /* Authentication.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFAC1536143C720700B4AE80 /* Authentication.plist */; };
+		EFF7D966143EB9890096AD5C /* Black_LISectionIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAC1537143C720700B4AE80 /* Black_LISectionIcon.png */; };
+		EFF7D967143EB9890096AD5C /* Black_LISectionIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAC1538143C720700B4AE80 /* Black_LISectionIcon@2x.png */; };
+		EFF7D969143EB9890096AD5C /* Native.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFAC153F143C720700B4AE80 /* Native.plist */; };
+		EFF7D96A143EB9890096AD5C /* Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFAC1540143C720700B4AE80 /* Preferences.plist */; };
+		EFF7D96B143EB9890096AD5C /* Silver_LISectionIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAC1541143C720700B4AE80 /* Silver_LISectionIcon.png */; };
+		EFF7D96C143EB9890096AD5C /* Silver_LISectionIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EFAC1542143C720700B4AE80 /* Silver_LISectionIcon@2x.png */; };
+		EFF7D96D143EB9A00096AD5C /* control in Resources */ = {isa = PBXBuildFile; fileRef = EFAC154B143C720700B4AE80 /* control */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF13968914A33D83005BBB7C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EF3EB93D143EB429008241E5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EF5927B01440BE01008C056C /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = System/Library/PrivateFrameworks/Preferences.framework; sourceTree = SDKROOT; };
+		EFAC14E8143C717F00B4AE80 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EFAC14EA143C717F00B4AE80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EFAC14EC143C717F00B4AE80 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EFAC14F0143C717F00B4AE80 /* LinkedInPlugin-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LinkedInPlugin-Info.plist"; sourceTree = "<group>"; };
+		EFAC14F2143C717F00B4AE80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EFAC14F4143C717F00B4AE80 /* LinkedInPlugin-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LinkedInPlugin-Prefix.pch"; sourceTree = "<group>"; };
+		EFAC150F143C720700B4AE80 /* OAAtachmentF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAtachmentF.h; sourceTree = "<group>"; };
+		EFAC1510143C720700B4AE80 /* OAAttachment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAAttachment.h; sourceTree = "<group>"; };
+		EFAC1511143C720700B4AE80 /* OAAttachment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAAttachment.m; sourceTree = "<group>"; };
+		EFAC1512143C720700B4AE80 /* OACall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OACall.h; sourceTree = "<group>"; };
+		EFAC1513143C720700B4AE80 /* OACall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OACall.m; sourceTree = "<group>"; };
+		EFAC1514143C720700B4AE80 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
+		EFAC1515143C720700B4AE80 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAConsumer.m; sourceTree = "<group>"; };
+		EFAC1516143C720700B4AE80 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
+		EFAC1517143C720700B4AE80 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OADataFetcher.m; sourceTree = "<group>"; };
+		EFAC1518143C720700B4AE80 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		EFAC1519143C720700B4AE80 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		EFAC151A143C720700B4AE80 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
+		EFAC151B143C720700B4AE80 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMutableURLRequest.m; sourceTree = "<group>"; };
+		EFAC151C143C720700B4AE80 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		EFAC151D143C720700B4AE80 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
+		EFAC151E143C720700B4AE80 /* OAProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAProblem.h; sourceTree = "<group>"; };
+		EFAC151F143C720700B4AE80 /* OAProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAProblem.m; sourceTree = "<group>"; };
+		EFAC1520143C720700B4AE80 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
+		EFAC1521143C720700B4AE80 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARequestParameter.m; sourceTree = "<group>"; };
+		EFAC1522143C720700B4AE80 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
+		EFAC1523143C720700B4AE80 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceTicket.m; sourceTree = "<group>"; };
+		EFAC1524143C720700B4AE80 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		EFAC1525143C720700B4AE80 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
+		EFAC1526143C720700B4AE80 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
+		EFAC1527143C720700B4AE80 /* OATokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OATokenManager.h; sourceTree = "<group>"; };
+		EFAC1528143C720700B4AE80 /* OATokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OATokenManager.m; sourceTree = "<group>"; };
+		EFAC1529143C720700B4AE80 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
+		EFAC152A143C720700B4AE80 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		EFAC152C143C720700B4AE80 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		EFAC152D143C720700B4AE80 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		EFAC152F143C720700B4AE80 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		EFAC1530143C720700B4AE80 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
+		EFAC1531143C720700B4AE80 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		EFAC1532143C720700B4AE80 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		EFAC1533143C720700B4AE80 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
+		EFAC1534143C720700B4AE80 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Base.m"; sourceTree = "<group>"; };
+		EFAC1536143C720700B4AE80 /* Authentication.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Authentication.plist; sourceTree = "<group>"; };
+		EFAC1537143C720700B4AE80 /* Black_LISectionIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Black_LISectionIcon.png; sourceTree = "<group>"; };
+		EFAC1538143C720700B4AE80 /* Black_LISectionIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Black_LISectionIcon@2x.png"; sourceTree = "<group>"; };
+		EFAC1539143C720700B4AE80 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAC153F143C720700B4AE80 /* Native.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Native.plist; sourceTree = "<group>"; };
+		EFAC1540143C720700B4AE80 /* Preferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
+		EFAC1541143C720700B4AE80 /* Silver_LISectionIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Silver_LISectionIcon.png; sourceTree = "<group>"; };
+		EFAC1542143C720700B4AE80 /* Silver_LISectionIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Silver_LISectionIcon@2x.png"; sourceTree = "<group>"; };
+		EFAC1543143C720700B4AE80 /* LinkedInAuthSecrets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedInAuthSecrets.h; sourceTree = "<group>"; };
+		EFAC1545143C720700B4AE80 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		EFAC1546143C720700B4AE80 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		EFAC1547143C720700B4AE80 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		EFAC1548143C720700B4AE80 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		EFAC1549143C720700B4AE80 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		EFAC154A143C720700B4AE80 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		EFAC154B143C720700B4AE80 /* control */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = control; sourceTree = "<group>"; };
+		EFAC1552143C720700B4AE80 /* KeychainUtils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KeychainUtils.mm; sourceTree = "<group>"; };
+		EFAC1553143C720700B4AE80 /* KeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainUtils.h; sourceTree = "<group>"; };
+		EFAC1554143C720700B4AE80 /* Plugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Plugin.h; sourceTree = "<group>"; };
+		EFAC1579143C720700B4AE81 /* LinkedInPlugin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LinkedInPlugin.mm; sourceTree = "<group>"; };
+		EFF7D937143EB8760096AD5C /* com.rpatil.lockinfo.LinkedInPlugin.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = com.rpatil.lockinfo.LinkedInPlugin.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFF7D934143EB8760096AD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF13968A14A33D83005BBB7C /* QuartzCore.framework in Frameworks */,
+				EFF7D964143EB9620096AD5C /* CoreGraphics.framework in Frameworks */,
+				EFF7D963143EB9600096AD5C /* Foundation.framework in Frameworks */,
+				EF5927B51440BE18008C056C /* Preferences.framework in Frameworks */,
+				EFF7D961143EB95D0096AD5C /* Security.framework in Frameworks */,
+				EFF7D962143EB95F0096AD5C /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFAC14D9143C717F00B4AE80 = {
+			isa = PBXGroup;
+			children = (
+				EFAC1579143C720700B4AE81 /* LinkedInPlugin.mm */,
+				EFAC150E143C720700B4AE80 /* OAuth */,
+				EFAC152A143C720700B4AE80 /* Makefile */,
+				EFAC152B143C720700B4AE80 /* JSON */,
+				EFAC152E143C720700B4AE80 /* Categories */,
+				EFAC1535143C720700B4AE80 /* Bundle */,
+				EFAC1543143C720700B4AE80 /* LinkedInAuthSecrets.h */,
+				EFAC1544143C720700B4AE80 /* Crypto */,
+				EFAC154B143C720700B4AE80 /* control */,
+				EFAC1552143C720700B4AE80 /* KeychainUtils.mm */,
+				EFAC1553143C720700B4AE80 /* KeychainUtils.h */,
+				EFAC1554143C720700B4AE80 /* Plugin.h */,
+				EFAC14EE143C717F00B4AE80 /* LinkedInPlugin */,
+				EFAC14E7143C717F00B4AE80 /* Frameworks */,
+				EFAC14E5143C717F00B4AE80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFAC14E5143C717F00B4AE80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFF7D937143EB8760096AD5C /* com.rpatil.lockinfo.LinkedInPlugin.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFAC14E7143C717F00B4AE80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF13968914A33D83005BBB7C /* QuartzCore.framework */,
+				EF5927B01440BE01008C056C /* Preferences.framework */,
+				EF3EB93D143EB429008241E5 /* Security.framework */,
+				EFAC14E8143C717F00B4AE80 /* UIKit.framework */,
+				EFAC14EA143C717F00B4AE80 /* Foundation.framework */,
+				EFAC14EC143C717F00B4AE80 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFAC14EE143C717F00B4AE80 /* LinkedInPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC14EF143C717F00B4AE80 /* Supporting Files */,
+			);
+			path = LinkedInPlugin;
+			sourceTree = "<group>";
+		};
+		EFAC14EF143C717F00B4AE80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC14F0143C717F00B4AE80 /* LinkedInPlugin-Info.plist */,
+				EFAC14F1143C717F00B4AE80 /* InfoPlist.strings */,
+				EFAC14F4143C717F00B4AE80 /* LinkedInPlugin-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EFAC150E143C720700B4AE80 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC150F143C720700B4AE80 /* OAAtachmentF.h */,
+				EFAC1510143C720700B4AE80 /* OAAttachment.h */,
+				EFAC1511143C720700B4AE80 /* OAAttachment.m */,
+				EFAC1512143C720700B4AE80 /* OACall.h */,
+				EFAC1513143C720700B4AE80 /* OACall.m */,
+				EFAC1514143C720700B4AE80 /* OAConsumer.h */,
+				EFAC1515143C720700B4AE80 /* OAConsumer.m */,
+				EFAC1516143C720700B4AE80 /* OADataFetcher.h */,
+				EFAC1517143C720700B4AE80 /* OADataFetcher.m */,
+				EFAC1518143C720700B4AE80 /* OAHMAC_SHA1SignatureProvider.h */,
+				EFAC1519143C720700B4AE80 /* OAHMAC_SHA1SignatureProvider.m */,
+				EFAC151A143C720700B4AE80 /* OAMutableURLRequest.h */,
+				EFAC151B143C720700B4AE80 /* OAMutableURLRequest.m */,
+				EFAC151C143C720700B4AE80 /* OAPlaintextSignatureProvider.h */,
+				EFAC151D143C720700B4AE80 /* OAPlaintextSignatureProvider.m */,
+				EFAC151E143C720700B4AE80 /* OAProblem.h */,
+				EFAC151F143C720700B4AE80 /* OAProblem.m */,
+				EFAC1520143C720700B4AE80 /* OARequestParameter.h */,
+				EFAC1521143C720700B4AE80 /* OARequestParameter.m */,
+				EFAC1522143C720700B4AE80 /* OAServiceTicket.h */,
+				EFAC1523143C720700B4AE80 /* OAServiceTicket.m */,
+				EFAC1524143C720700B4AE80 /* OASignatureProviding.h */,
+				EFAC1525143C720700B4AE80 /* OAToken.h */,
+				EFAC1526143C720700B4AE80 /* OAToken.m */,
+				EFAC1527143C720700B4AE80 /* OATokenManager.h */,
+				EFAC1528143C720700B4AE80 /* OATokenManager.m */,
+				EFAC1529143C720700B4AE80 /* OAuthConsumer.h */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		EFAC152B143C720700B4AE80 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC152C143C720700B4AE80 /* JSONKit.h */,
+				EFAC152D143C720700B4AE80 /* JSONKit.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		EFAC152E143C720700B4AE80 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC152F143C720700B4AE80 /* NSMutableURLRequest+Parameters.h */,
+				EFAC1530143C720700B4AE80 /* NSMutableURLRequest+Parameters.m */,
+				EFAC1531143C720700B4AE80 /* NSString+URLEncoding.h */,
+				EFAC1532143C720700B4AE80 /* NSString+URLEncoding.m */,
+				EFAC1533143C720700B4AE80 /* NSURL+Base.h */,
+				EFAC1534143C720700B4AE80 /* NSURL+Base.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		EFAC1535143C720700B4AE80 /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC1536143C720700B4AE80 /* Authentication.plist */,
+				EFAC1537143C720700B4AE80 /* Black_LISectionIcon.png */,
+				EFAC1538143C720700B4AE80 /* Black_LISectionIcon@2x.png */,
+				EFAC1539143C720700B4AE80 /* Info.plist */,
+				EFAC153F143C720700B4AE80 /* Native.plist */,
+				EFAC1540143C720700B4AE80 /* Preferences.plist */,
+				EFAC1541143C720700B4AE80 /* Silver_LISectionIcon.png */,
+				EFAC1542143C720700B4AE80 /* Silver_LISectionIcon@2x.png */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
+		EFAC1544143C720700B4AE80 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				EFAC1545143C720700B4AE80 /* Base64Transcoder.c */,
+				EFAC1546143C720700B4AE80 /* Base64Transcoder.h */,
+				EFAC1547143C720700B4AE80 /* hmac.c */,
+				EFAC1548143C720700B4AE80 /* hmac.h */,
+				EFAC1549143C720700B4AE80 /* sha1.c */,
+				EFAC154A143C720700B4AE80 /* sha1.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFF7D936143EB8760096AD5C /* com.rpatil.lockinfo.LinkedInPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFF7D945143EB8760096AD5C /* Build configuration list for PBXNativeTarget "com.rpatil.lockinfo.LinkedInPlugin" */;
+			buildPhases = (
+				EFF7D933143EB8760096AD5C /* Sources */,
+				EFF7D934143EB8760096AD5C /* Frameworks */,
+				EFF7D935143EB8760096AD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = com.rpatil.lockinfo.LinkedInPlugin;
+			productName = LockinfoLinkedIn;
+			productReference = EFF7D937143EB8760096AD5C /* com.rpatil.lockinfo.LinkedInPlugin.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFAC14DB143C717F00B4AE80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = EFAC14DE143C717F00B4AE80 /* Build configuration list for PBXProject "LinkedInPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EFAC14D9143C717F00B4AE80;
+			productRefGroup = EFAC14E5143C717F00B4AE80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFF7D936143EB8760096AD5C /* com.rpatil.lockinfo.LinkedInPlugin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFF7D935143EB8760096AD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF93E74B143ECC8E004EFAAB /* Info.plist in Resources */,
+				EFF7D96D143EB9A00096AD5C /* control in Resources */,
+				EFF7D965143EB9890096AD5C /* Authentication.plist in Resources */,
+				EFF7D966143EB9890096AD5C /* Black_LISectionIcon.png in Resources */,
+				EFF7D967143EB9890096AD5C /* Black_LISectionIcon@2x.png in Resources */,
+				EFF7D969143EB9890096AD5C /* Native.plist in Resources */,
+				EFF7D96A143EB9890096AD5C /* Preferences.plist in Resources */,
+				EFF7D96B143EB9890096AD5C /* Silver_LISectionIcon.png in Resources */,
+				EFF7D96C143EB9890096AD5C /* Silver_LISectionIcon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFF7D933143EB8760096AD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF67192E143EBEF700DC9721 /* hmac.c in Sources */,
+				EF67192F143EBEF700DC9721 /* sha1.c in Sources */,
+				EF67192B143EBE2300DC9721 /* Base64Transcoder.c in Sources */,
+				EFF7D94A143EB8CE0096AD5C /* OAAttachment.m in Sources */,
+				EFF7D94B143EB8CE0096AD5C /* OACall.m in Sources */,
+				EFF7D94C143EB8CE0096AD5C /* OAConsumer.m in Sources */,
+				EFF7D94D143EB8CE0096AD5C /* OADataFetcher.m in Sources */,
+				EFF7D94E143EB8CE0096AD5C /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				EFF7D94F143EB8CE0096AD5C /* OAMutableURLRequest.m in Sources */,
+				EFF7D950143EB8CE0096AD5C /* OAPlaintextSignatureProvider.m in Sources */,
+				EFF7D951143EB8CE0096AD5C /* OAProblem.m in Sources */,
+				EFF7D952143EB8CE0096AD5C /* OARequestParameter.m in Sources */,
+				EFF7D953143EB8CE0096AD5C /* OAServiceTicket.m in Sources */,
+				EFF7D954143EB8CE0096AD5C /* OAToken.m in Sources */,
+				EFF7D955143EB8CE0096AD5C /* OATokenManager.m in Sources */,
+				EFF7D956143EB8CE0096AD5C /* JSONKit.m in Sources */,
+				EFF7D957143EB8CE0096AD5C /* NSMutableURLRequest+Parameters.m in Sources */,
+				EFF7D958143EB8CE0096AD5C /* NSString+URLEncoding.m in Sources */,
+				EFF7D959143EB8CE0096AD5C /* NSURL+Base.m in Sources */,
+				EFF7D948143EB8BE0096AD5C /* LinkedInPlugin.mm in Sources */,
+				EFF7D949143EB8BE0096AD5C /* KeychainUtils.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EFAC14F1143C717F00B4AE80 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFAC14F2143C717F00B4AE80 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFAC1508143C718000B4AE80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = JBDev;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFAC1509143C718000B4AE80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = JBDev;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFF7D946143EB8760096AD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_NAME = LinkedInPlugin;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinkedInPlugin/LinkedInPlugin-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "LinkedInPlugin/LinkedInPlugin-Info.plist";
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = /opt/theos/include/;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		EFF7D947143EB8760096AD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_NAME = LinkedInPlugin;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinkedInPlugin/LinkedInPlugin-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "LinkedInPlugin/LinkedInPlugin-Info.plist";
+				INSTALL_PATH = "";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = /opt/theos/include/;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFAC14DE143C717F00B4AE80 /* Build configuration list for PBXProject "LinkedInPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFAC1508143C718000B4AE80 /* Debug */,
+				EFAC1509143C718000B4AE80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFF7D945143EB8760096AD5C /* Build configuration list for PBXNativeTarget "com.rpatil.lockinfo.LinkedInPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFF7D946143EB8760096AD5C /* Debug */,
+				EFF7D947143EB8760096AD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFAC14DB143C717F00B4AE80 /* Project object */;
+}

@@ -1,0 +1,11 @@
+Package: com.rpatil.lockinfolinkedin
+Name: LinkedIn Plugin for LockInfo (Native)
+Version: 1.0.0.0
+Architecture: iphoneos-arm
+Description: Adds a native plugin for LinkedIn to your LockInfo screen. Visit More Information below for Screenshot(s) and other information.
+Homepage: http://dl.dropbox.com/u/8498648/LockInfoLinkedIn/lockinfolinkedin.d.html
+Depiction: http://dl.dropbox.com/u/8498648/LockInfoLinkedIn/lockinfolinkedin.d.html
+Maintainer: Rajendra Patil (rpatil) <rrpatil26@gmail.com>
+Author: Rajendra Patil (rpatil) <rrpatil26@gmail.com>
+Section: LockInfo Addons
+Pre-Depends: com.ashman.lockinfo (>= 3.0.0.0), firmware (>= 3.2)
