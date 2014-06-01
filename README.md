@@ -2,7 +2,7 @@ About
 =====
 This is LinkedIn plugin for LockInfo. To know what is LockInfo visit http://www.lockinfo.net/.
 
-This plugin shows updates from your LinkedIn network on your lockscreen. Preview http://dl.dropbox.com/u/8498648/LockInfoLinkedIn/lockinfolinkedin.html
+This plugin shows updates from your LinkedIn network on your lockscreen. Preview http://dl.dropbox.com/u/8498648/ios/LockInfoLinkedIn/lockinfolinkedin.html
 
 Getting started
 ---------------
@@ -23,5 +23,5 @@ If you want to build this, you will have to add one file locally, `LinkedInAuthS
 Try it
 ------
 
-If you don't want to build it but just wanted to try it on your phone then go to cydia on your phone and add this repo (very alpha) http://dl.dropbox.com/u/8498648/LockInfoLinkedIn/repo
+If you don't want to build it but just wanted to try it on your phone then go to cydia on your phone and add this repo (very alpha) http://dl.dropbox.com/u/8498648/ios/LockInfoLinkedIn/repo
 Then install from cydia, enable it in LockInfo settings.
