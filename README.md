@@ -4,6 +4,10 @@ This is LinkedIn plugin for LockInfo. To know what is LockInfo visit http://www.
 
 This plugin shows updates from your LinkedIn network on your lockscreen. Preview http://dl.dropbox.com/u/8498648/ios/LockInfoLinkedIn/lockinfolinkedin.html
 
+![alt screenshot](https://dl.dropboxusercontent.com/u/8498648/ios/LockInfoLinkedIn/preview.png)
+
+![alt screenshot](https://dl.dropboxusercontent.com/u/8498648/ios/LockInfoLinkedIn/1.png)
+
 Getting started
 ---------------
 
